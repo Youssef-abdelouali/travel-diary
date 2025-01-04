@@ -1,0 +1,20 @@
+/* Define a font variable */
+:root {
+    --primary-font: 'Roboto', sans-serif;
+  }
+  
+  /* Apply the font globally */
+  body {
+    font-family: var(--primary-font) !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222; /* Example background color */
+    color: #f4f4f4; /* Text color */
+  }
+  
+  /* Apply the font to other elements globally */
+  h1, h2, h3, h4, h5, h6, p, a, button, input {
+    font-family: var(--primary-font) !important;
+  }
+  

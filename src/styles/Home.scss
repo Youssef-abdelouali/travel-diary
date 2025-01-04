@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hero {
+  position: relative;
+  background-image: url('../../public/assets/hero-background.png'); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Keeps the image centered */
+  background-attachment: fixed; /* Makes the background image stay fixed when scrolling */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Centers the text horizontally */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Centers content horizontally */
+  padding: 0 2rem; /* Adds padding on smaller screens */
+  
+  /* Gradient overlay for color and readability */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.6)
+  ), url('../../public/assets/hero-background.png');
+  background-size: cover;
+  height: inherit;
+
+  /* Optional: Adding a blur effect to the background */
+
+
+  h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .start-btn {
+    padding: 12px 30px;
+    background-color: #7E5CAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: #69247C;
+    }
+  }
+}
+
+/* Mobile - adjustments for smaller screens */
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .start-btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero {
+    padding: 4rem;
+    height: 80vh;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .start-btn {
+      padding: 10px 25px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .hero {
+    height: 100vh;
+    padding: 6rem 4rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
