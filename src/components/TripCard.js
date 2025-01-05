@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import '../styles/TripCard.scss';
 
 const TripCard = ({ trip }) => {
@@ -10,11 +9,15 @@ const TripCard = ({ trip }) => {
       <h3>{trip.name}</h3>
       <p>{trip.date}</p>
       <p>{trip.description}</p>
-      <Link to="/map">
+      <div className="trip-card-buttons">
+        <Link to="/map">
           <button>View on Map</button>
-      </Link>
+        </Link>
+        <Link to={`/edit-trip/${trip.id}`}>
+          <button className="edit-btn">Edit Trip</button>
+        </Link>
+      </div>
     </div>
-         
   );
 };
 

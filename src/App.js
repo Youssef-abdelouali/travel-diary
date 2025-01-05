@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import AddEditTrip from './pages/AddEditTrip';
 import MapPage from './pages/MapPage';
 import Auth from './pages/Auth';
+import EditTrip from './pages/EditTrip';
 import './styles/App.scss';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/add-edit-trip" element={<AddEditTrip />} />
+          <Route path="/edit-trip/:id" element={<EditTrip/>} /> 
           <Route path="/map" element={<MapPage />} />
           <Route path="/auth" element={<Auth />} />
         </Routes>

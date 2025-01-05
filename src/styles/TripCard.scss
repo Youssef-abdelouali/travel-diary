@@ -5,7 +5,7 @@
     padding: 1.5rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-    height: 50%;
+    height:auto;
     
     &:hover {
       transform: scale(1.05);
@@ -13,7 +13,7 @@
   
     img {
       width: 100%;
-      height: 60%;
+      height: auto;
       max-height:50%;
       border-radius: 5px;
       margin-bottom: 1rem;
@@ -26,6 +26,32 @@
   
     p {
       font-size: 1rem;
+    }
+  }
+   .trip-card-buttons {
+    display: flex;
+    gap: 10px;  // Adds space between the buttons
+    margin-top: 10px;
+    
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #c445ff;  // Customize color
+      color: black;
+      
+      &:hover {
+        background-color: #e215e2; // Change color on hover
+      }
+      
+      &.edit-btn {
+        background-color: #c031f8;  // Green color for Edit button
+        &:hover {
+          background-color: #ee38ff;  // Darker green on hover
+        }
+      }
     }
   }
   /* Tablet */
