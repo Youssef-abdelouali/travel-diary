@@ -39,15 +39,15 @@
       cursor: pointer;
       border: none;
       border-radius: 5px;
-      background-color: #c445ff;  // Customize color
-      color: black;
+      background-color: #7E5CAD;  // Customize color
+      color: white;
       
       &:hover {
         background-color: #e215e2; // Change color on hover
       }
       
       &.edit-btn {
-        background-color: #c031f8;  // Green color for Edit button
+        background-color: #7E5CAD;  // Green color for Edit button
         &:hover {
           background-color: #ee38ff;  // Darker green on hover
         }

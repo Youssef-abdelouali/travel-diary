@@ -2,7 +2,7 @@
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: #9B7EBD;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
@@ -27,10 +27,22 @@
         margin-top: 5px;
         border-radius: 5px;
       }
+      input{
+        background-color: white;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: gainsboro;
+
+      }
   
       textarea {
         resize: vertical;
         height: 100px;
+        background-color: white;
+        color: gainsboro;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
       }
     }
   
