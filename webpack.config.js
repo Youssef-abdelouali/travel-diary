@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
+
 module.exports = {
   entry: './src/index.js', // Entry point of your app
   output: {
@@ -54,6 +55,7 @@ module.exports = {
       template: './public/index.html', // Template for generating the HTML file
     }),
     new Dotenv(), // To manage environment variables
+
   ],
   mode: 'development', // Change to 'production' for production build
   devtool: 'source-map', // Generate source maps for debugging

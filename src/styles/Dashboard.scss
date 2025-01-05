@@ -44,6 +44,7 @@
     .trip-cards {
       width: 65%;
       display: grid;
+      height: 50%;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 1.3rem;
       color: #9B7EBD;
