@@ -2,10 +2,6 @@
 
 .hero {
   position: relative;
-  background-image: url('../../public/assets/hero-background.png'); /* Add your image path here */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center center; /* Keeps the image centered */
-  background-attachment: fixed; /* Makes the background image stay fixed when scrolling */
   height: 100vh; /* Full viewport height */
   text-align: center; /* Centers the text horizontally */
   color: gainsboro;
@@ -15,17 +11,6 @@
   align-items: center; /* Centers content horizontally */
   padding: 0 2rem; /* Adds padding on smaller screens */
   
-  /* Gradient overlay for color and readability */
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.4), 
-    rgba(0, 0, 0, 0.6)
-  ), url('../../public/assets/hero-background.png');
-  background-size: cover;
-  height: inherit;
-
-  /* Optional: Adding a blur effect to the background */
-
-
   h1 {
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
