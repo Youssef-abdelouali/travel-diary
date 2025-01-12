@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(183, 41, 240, 0.705) 0px 25px 20px -20px;
   
   /* Styling for the TravelDiary logo */
   .logo {
@@ -38,6 +39,79 @@
 
     &:hover {
       color: #7500b9;
+    }
+  }
+}
+
+/* Mobile Styles (max-width: 600px) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: 200;
+
+    .logo {
+      font-size: 0.5rem; /* Smaller logo font size for mobile */
+      margin-bottom: 0.1rem;
+    }
+
+    nav {
+      flex-direction: row;
+      margin-top: 0rem;
+
+      a {
+        margin: 0.5rem 0;
+        font-size: 1.2rem; /* Increase font size for readability on small screens */
+        padding: 5px;
+      }
+    }
+  }
+}
+
+/* Tablet Styles (min-width: 601px and max-width: 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 200;
+
+    .logo {
+      font-size: 1.2rem; /* Smaller logo font size for mobile */
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      flex-direction: row;
+      margin-top: 1rem;
+
+      a {
+        margin: 0.5rem 0;
+        font-size: 1.2rem; /* Increase font size for readability on small screens */
+        padding: 5px;
+      }
+    }
+  }
+}
+
+// /* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+
+  .logo {
+    font-size: 1.6rem; /* Larger logo for desktop */
+    margin-left: 2rem;
+  }
+
+  nav {
+    a {
+      font-size: 1.2rem; /* Adjust font size for desktop */
+      margin: 0 1.5rem;
     }
   }
 }
