@@ -31,16 +31,33 @@
     margin: 0 1.5rem;
     color: #9b59b6;
     font-size: 1rem;
-    transition: color 0.3s ease;
     font-family: "Poppins", serif;
     font-weight: 350;
-    box-shadow: rgba(183, 41, 240, 0.705) 0px 25px 20px -20px;
-
-
+    text-decoration: none; /* Remove underline by default */
+    position: relative; /* To position the animated line */
+    transition: color 0.3s ease;
+  
+    /* Adding the underline effect using ::after */
+    &::after {
+      content: ''; /* Creates an empty element */
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #9b59b6; /* Color of the underline */
+      bottom: -5px; /* Adjusts the distance of the line from the text */
+      left: 0;
+      transition: width 0.3s ease; /* Animates the width of the underline */
+    }
+  
     &:hover {
-      color: #7500b9;
+      color: #9b59b6; /* Change text color on hover */
+    }
+  
+    &:hover::after {
+      width: 100%; /* Expands the line to the full width of the link */
     }
   }
+  
 }
 
 /* Mobile Styles (max-width: 600px) */
@@ -100,7 +117,7 @@
   .header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 0rem 0rem;
   }
 
   .logo {

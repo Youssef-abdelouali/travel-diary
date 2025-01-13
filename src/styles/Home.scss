@@ -36,11 +36,16 @@
     border-radius: 5px;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 25%;
+    font-family: "Poppins", serif;
+    font-weight: 400;
     
     &:hover {
       background-color: #69247C;
     }
   }
+  
 }
 
 /* Mobile - adjustments for smaller screens */
