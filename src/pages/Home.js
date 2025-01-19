@@ -7,7 +7,7 @@ const Home = () => {
 
   // Handle button click to navigate to Dashboard
   const handleNavigate = () => {
-    navigate('/dashboard'); // Navigate to the Dashboard page
+    navigate('/add-edit-trip'); // Navigate to the Dashboard page
   };
 
   return (
